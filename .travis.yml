@@ -1,0 +1,23 @@
+---
+language: python
+services: docker
+
+env:
+  global:
+    - ROLE_NAME: compose
+install:
+  # Install test dependencies.
+  - pip install docker-compose docker
+
+before_script:
+  # Use actual Ansible Galaxy role name for the project directory.
+  - cd ../
+  - mv ansible-role-$ROLE_NAME geerlingguy.$ROLE_NAME
+  - cd geerlingguy.$ROLE_NAME
+
+script:
+  # Run tests.
+  - molecule test
+
+notifications:
+webhooks: https://localhost:8000/api/v1/notifications/
