@@ -2,4 +2,4 @@
 name: test
 copy:
   src: /tmp/src.txt
-  dst /tmp/dst.md
+  dst: /tmp/dst.md
