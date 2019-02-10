@@ -1,0 +1,5 @@
+galaxy_info:
+  role_name: compose
+  author: zaaaaaaaa
+  description: testing local ansible galaxy server
+  galaxy_tags: ['docker', 'docker-cmpose', 'service', 'deploy']
