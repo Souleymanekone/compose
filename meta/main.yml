@@ -1,5 +1,13 @@
+---
+dependencies: []
+
 galaxy_info:
   role_name: compose
   author: zaaaaaaaa
   description: testing local ansible galaxy server
-  galaxy_tags: ['docker', 'docker-cmpose', 'service', 'deploy']
+  galaxy_tags:
+    - docker
+    - docker-compose
+    - compose
+    - cloud
+    - system
